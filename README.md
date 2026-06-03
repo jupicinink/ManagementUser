@@ -1,10 +1,10 @@
 # ManagementUser
 
-Projeto utilizado na disciplina de ManutenÁ„o e EvoluÁ„o de Software.
+Projeto utilizado na disciplina de Manuten√ß√£o e Evolu√ß√£o de Software.
 
 ## Objetivo
 
-Construir uma API REST para gerenciamento de usu·rios e perfis utilizando ASP.NET Core.
+Construir uma API REST para gerenciamento de usu√°rios e perfis utilizando ASP.NET Core.
 
 ## Tecnologias
 
@@ -16,14 +16,14 @@ Construir uma API REST para gerenciamento de usu·rios e perfis utilizando ASP.NE
 * Git
 * GitHub
 
-## PrÈ-requisitos
+## Pr√©-requisitos
 
 * Visual Studio 2022
 * .NET 8 SDK
 
 ## Como executar
 
-Clone o repositÛrio:
+Clone o reposit√≥rio:
 
 git clone URL_DO_REPOSITORIO
 
@@ -41,7 +41,7 @@ dotnet run
 
 Acesse o Swagger:
 
-[http://localhost:xxxx/swagger](http://localhost:xxxx/swagger)
+[http://localhost:5156/swagger](http://localhost:xxxx/swagger)
 
 ## Estrutura do Projeto
 
@@ -53,4 +53,4 @@ Acesse o Swagger:
 
 ## Disciplina
 
-ManutenÁ„o e EvoluÁ„o de Software
+Manuten√ß√£o e Evolu√ß√£o de Software
