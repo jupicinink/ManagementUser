@@ -1,26 +1,26 @@
-
-using Microsoft.EntityFrameworkCore;
 using ManagementUser.Data;
-
+using ManagementUser.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-// Configuração do MySQL com Pomelo (coloque ANTES de var app = builder.Build();)
-builder.Services.AddDbContext<AppDbContext>(options =>
-options.UseMySql(
-builder.Configuration.GetConnectionString("DefaultConnection"),
-ServerVersion.AutoDetect(
-builder.Configuration.GetConnectionString("DefaultConnection")
-)
-
-)
-);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        ServerVersion.AutoDetect(
+            builder.Configuration.GetConnectionString("DefaultConnection")
+        )
+
+    )
+);
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<PerfilService>();
 
 var app = builder.Build();
 
